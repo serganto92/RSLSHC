@@ -1,0 +1,371 @@
+body,html {
+	padding: 0;
+	margin:0;
+	font-family: Roboto, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	/*background-image: url(../img/Background_faded.jpg);*/
+	background-repeat: repeat;
+}
+
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 840px;
+		height: 60px;
+		outline: 1px solid black;
+	}
+
+		.header_title {
+			height: 50px;
+			min-width: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.flex_hidden {
+			flex-grow: 1;
+			max-width: 9%;
+			border: none;
+		}
+
+	.global_rates {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 560px;
+		height: 50px;
+	}
+
+		.global_rates_blue, .global_rates_purple, .global_rates_gold {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #919090;
+			width: 190px;
+			height: 50px;
+		}
+
+		.global_rates_gold {
+			width: 140px;
+		}
+
+		.global_rates_blue .global_rates_img {
+			width: 40px;
+			height: 40px;
+			background-color: blue;
+			outline: 1px solid black;
+		}
+
+		.global_rates_purple .global_rates_img {
+			width: 40px;
+			height: 40px;
+			background-color: purple;
+			outline: 1px solid black;
+		}
+
+		.global_rates_gold .global_rates_img {
+			width: 40px;
+			height: 40px;
+			background-color: gold;
+			outline: 1px solid black;
+		}
+
+			.global_rates_img img {
+				max-width: 40px;
+				max-height: 40px;
+			}
+
+			.global_rates_current {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				width: 90px;
+				height: 40px;
+				background-color: #cbcbcb;
+			}
+
+			.global_rates_gold .global_rates_current {
+				width: 40px;
+			}
+
+				.global_rates_current_epic,.global_rates_current_legendary {
+					width: 40px;
+					height: 40px;
+					background-color: grey;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					outline: 1px solid black;
+					font-size: 17px;
+				}
+
+				.global_rates_current_epic {
+					color: purple;
+				}
+
+				.global_rates_current_legendary {
+					color: gold;
+				}
+
+			.global_rates_button {
+				width: 40px;
+				height: 40px;
+				background-color: yellow;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				outline: 1px solid black;
+			}
+
+				.global_rates_button .switch {
+					width: 34px;
+					height: 34px;
+				}
+
+	.shards {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 840px;
+		height: 450px;
+		outline: 1px solid black;
+	}
+
+	.shards_header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 830px;
+		height: 30px;
+	}
+
+		.type {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 64px;
+			font-size: 13px;
+		}
+
+		.actual_rates_title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 110px;
+			font-size: 13px;
+		}
+
+		.counter_title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 150px;
+			font-size: 13px;
+		}
+
+		.event_title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			font-size: 13px;
+		}
+
+		.rates_fact_title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 40px;
+			font-size: 13px;
+		}
+
+		.first_player {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			align-items: center;
+			height: 430px;
+			width: 840px;
+		}
+
+			.shards_header {
+				border-bottom: 1px solid black;
+				width: 840px;
+			}
+
+			.blue,.purple,.gold {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: center;
+				width: 100%;
+				min-height: 130px;
+			}
+
+				.blue .pic {
+					max-width: 64px;
+					max-height: 64px;
+				}
+
+					.shard_image {
+						max-width: 64px;
+						max-height: 64px;
+					}
+
+				.purple .pic {
+					width: 64px;
+					height: 64px;
+					background-color: purple;
+				}
+
+				.gold .pic {
+					width: 64px;
+					height: 64px;
+					background-color: gold;
+				}
+
+				.actual_rates {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					width: 110px;
+					height: 110px;
+				}
+
+				.gold .actual_rates {
+					height: 50px;
+				}
+
+					.actual_rates_epic,.actual_rates_legendary {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						align-items: center;
+						height: 50px;
+						width: 110px;
+					}
+
+					.actual_rates_epic .rate,.actual_rates_epic .av_shards{
+						color: purple;
+					}
+
+					.actual_rates_legendary .rate,.actual_rates_legendary .av_shards{
+						color: gold;
+					}
+
+						.rate,.av_shards {
+							width: 50px;
+							height: 50px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							outline: 1px solid black;
+						}
+
+				.counter_block {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					height: 110px;
+					width: 150px;
+				}
+
+					.counter {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						width: 50px;
+						height: 50px;
+						outline: 1px solid black;
+					}
+
+					.buttons_counter,.buttons_counter2 {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: center;
+						height: 110px;
+						width: 30px;
+					}
+
+						.button {
+							width: 30px;
+							height: 30px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+
+				.event {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					height: 100px;
+					width: 40px;
+				}
+
+				.gold .event {
+					height: 40px;
+				}
+
+					.event-epic,.event-legendary {
+						width: 40px;
+						height: 40px;
+					}
+
+					.event-epic {
+						background-image: url(../img/hero-epic.png);
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+					}
+
+					.event-legendary {
+						background-image: url(../img/hero-leg.png);
+						background-position: 50% 50%;
+						background-repeat: no-repeat;
+					}
+
+				.rates_fact {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					height: 100px;
+					width: 40px;
+				}
+
+				.gold .rates_fact {
+					height: 40px;
+				}
+
+					.rates_fact-epic,.rates_fact-legendary {
+						width: 60px;
+						height: 40px;
+						outline: 1px solid black;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+
+/* Служебные классы */
+	
+.faded {
+	filter: brightness(90%);
+}
