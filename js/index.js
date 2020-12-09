@@ -119,7 +119,7 @@ $(function(){
 
 	$('.blue .plus5').on('click', function () {
 		blue_counter = blue_counter + 5;
-		$(this).parent().prev().prev().html(blue_counter);
+		$(this).parent().prev().html(blue_counter);
 		BlueActualRatesEpic();
 		BlueActualRatesLegendary();
 		avShardsBlueEpic();
@@ -128,7 +128,7 @@ $(function(){
 
 	$('.blue .plus10').on('click', function () {
 		blue_counter = blue_counter + 10;
-		$(this).parent().prev().prev().html(blue_counter);
+		$(this).parent().prev().html(blue_counter);
 		BlueActualRatesEpic();
 		BlueActualRatesLegendary();
 		avShardsBlueEpic();
@@ -146,7 +146,7 @@ $(function(){
 		}
 		else {
 			blue_counter = blue_counter - 1;
-			$(this).parent().prev().html(blue_counter);
+			$(this).parent().prev().prev().html(blue_counter);
 			BlueActualRatesEpic();
 			BlueActualRatesLegendary();
 			avShardsBlueEpic();
@@ -174,7 +174,7 @@ $(function(){
 
 	$('.blue .zero').on('click', function() {
 		blue_counter = 0;
-		$(this).parent().prev().html(blue_counter);
+		$(this).parent().prev().prev().html(blue_counter);
 		BlueActualRatesEpic();
 		BlueActualRatesLegendary();
 		avShardsBlueEpic();
@@ -192,7 +192,7 @@ $(function(){
 
 	$('.purple .plus5').on('click', function () {
 		purple_counter = purple_counter + 5;
-		$(this).parent().prev().prev().html(purple_counter);
+		$(this).parent().prev().html(purple_counter);
 		PurpleActualRatesEpic();
 		PurpleActualRatesLegendary();
 		avShardsPurpleEpic();
@@ -201,7 +201,7 @@ $(function(){
 
 	$('.purple .plus10').on('click', function () {
 		purple_counter = purple_counter + 10;
-		$(this).parent().prev().prev().html(purple_counter);
+		$(this).parent().prev().html(purple_counter);
 		PurpleActualRatesEpic();
 		PurpleActualRatesLegendary();
 		avShardsPurpleEpic();
@@ -218,7 +218,7 @@ $(function(){
 		}
 		else {
 			purple_counter = purple_counter - 1;
-			$(this).parent().prev().html(purple_counter);
+			$(this).parent().prev().prev().html(purple_counter);
 			PurpleActualRatesEpic();
 			PurpleActualRatesLegendary();
 			avShardsPurpleEpic();
@@ -246,7 +246,7 @@ $(function(){
 
 	$('.purple .zero').on('click', function() {
 		purple_counter = 0;
-		$(this).parent().prev().html(purple_counter);
+		$(this).parent().prev().prev().html(purple_counter);
 		PurpleActualRatesEpic();
 		PurpleActualRatesLegendary();
 		avShardsPurpleEpic();
@@ -262,14 +262,14 @@ $(function(){
 
 	$('.gold .plus5').on('click', function () {
 		gold_counter = gold_counter + 5;
-		$(this).parent().prev().prev().html(gold_counter);
+		$(this).parent().prev().html(gold_counter);
 		GoldActualRatesLegendary();
 		avShardsGoldLegendary();
 	});
 
 	$('.gold .plus10').on('click', function () {
 		gold_counter = gold_counter + 10;
-		$(this).parent().prev().prev().html(gold_counter);
+		$(this).parent().prev().html(gold_counter);
 		GoldActualRatesLegendary();
 		avShardsGoldLegendary();
 	});
@@ -282,7 +282,7 @@ $(function(){
 		}
 		else {
 			gold_counter = gold_counter - 1;
-			$(this).parent().prev().html(gold_counter);
+			$(this).parent().prev().prev().html(gold_counter);
 			GoldActualRatesLegendary();
 			avShardsGoldLegendary();
 		}
@@ -304,7 +304,7 @@ $(function(){
 
 	$('.gold .zero').on('click', function() {
 		gold_counter = 0;
-		$(this).parent().prev().html(gold_counter);
+		$(this).parent().prev().prev().html(gold_counter);
 		GoldActualRatesLegendary();
 		avShardsGoldLegendary();
 	});
@@ -700,5 +700,5 @@ $(function(){
 	$(document).ready(LoadVariablesBC());
 	$(document).ready(LoadVariablesPC());
 	$(document).ready(LoadVariablesGC());
-	
+
 });

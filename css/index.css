@@ -9,8 +9,9 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	/*background-image: url(../img/Background_faded.jpg);*/
+	background-image: url(../img/Background_faded3bl.png);
 	background-repeat: repeat;
+	background-size: 1	00%;
 }
 
 	header {
@@ -20,8 +21,42 @@ body {
 		align-items: center;
 		width: 840px;
 		height: 60px;
-		outline: 1px solid black;
+		background-color: #041b2b;
+		border: 1px solid #ba8c32;
+		border-top: none;
+		border-radius: 0px 0px 10px 10px;
+		color: #ba8c32;
+		margin-bottom: 10px;
 	}
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 840px;
+		height: 30px;
+		background-color: #041b2b;
+		border: 1px solid #ba8c32;
+		border-radius: 10px 10px 0px 0px;
+		color: #ba8c32;
+		margin-top: 10px;
+	}
+
+		.footer a {
+			color: #ba8c32;
+			text-decoration: none;
+			font-size: 14px;
+		}
+
+		.footer span {
+			font-size: 14px;
+			color: #757575;
+		}
+
+		.footer .flex_hidden {
+			min-width: 450px;
+		}
 
 		.header_title {
 			height: 50px;
@@ -51,7 +86,6 @@ body {
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
-			background-color: #919090;
 			width: 190px;
 			height: 50px;
 		}
@@ -63,27 +97,25 @@ body {
 		.global_rates_blue .global_rates_img {
 			width: 40px;
 			height: 40px;
-			background-color: blue;
 			outline: 1px solid black;
 		}
 
 		.global_rates_purple .global_rates_img {
 			width: 40px;
 			height: 40px;
-			background-color: purple;
 			outline: 1px solid black;
 		}
 
 		.global_rates_gold .global_rates_img {
 			width: 40px;
 			height: 40px;
-			background-color: gold;
 			outline: 1px solid black;
 		}
 
 			.global_rates_img img {
 				max-width: 40px;
 				max-height: 40px;
+				border:1px solid #05c8f6;
 			}
 
 			.global_rates_current {
@@ -93,7 +125,6 @@ body {
 				align-items: center;
 				width: 90px;
 				height: 40px;
-				background-color: #cbcbcb;
 			}
 
 			.global_rates_gold .global_rates_current {
@@ -101,18 +132,19 @@ body {
 			}
 
 				.global_rates_current_epic,.global_rates_current_legendary {
-					width: 40px;
-					height: 40px;
-					background-color: grey;
+					width: 38px;
+					height: 38px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					outline: 1px solid black;
-					font-size: 17px;
+					font-size: 14px;
+					border:1px solid #05c8f6;
+					border-radius: 5px;
 				}
 
 				.global_rates_current_epic {
-					color: purple;
+					color: #a603a6;
 				}
 
 				.global_rates_current_legendary {
@@ -120,18 +152,21 @@ body {
 				}
 
 			.global_rates_button {
-				width: 40px;
-				height: 40px;
-				background-color: yellow;
+				width: 38px;
+				height: 38px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				outline: 1px solid black;
+				border:1px solid #05c8f6;
+				border-radius: 5px;
 			}
 
 				.global_rates_button .switch {
-					width: 34px;
-					height: 34px;
+					width: 38px;
+					height: 38px;
+					background-color: transparent;
+					border: none;
+					color: white;
 				}
 
 	.shards {
@@ -141,7 +176,7 @@ body {
 		align-items: center;
 		width: 840px;
 		height: 450px;
-		outline: 1px solid black;
+		border: 1px solid #ba8c32;
 	}
 
 	.shards_header {
@@ -149,8 +184,11 @@ body {
 		flex-direction: row;
 		justify-content: space-evenly;
 		align-items: center;
-		width: 830px;
+		width: 840px;
 		height: 30px;
+		border-bottom: 1px solid #ba8c32;
+		color: #ba8c32;
+		background-color: #041b2b;
 	}
 
 		.type {
@@ -200,12 +238,8 @@ body {
 			align-items: center;
 			height: 430px;
 			width: 840px;
+			background-color: #165976;
 		}
-
-			.shards_header {
-				border-bottom: 1px solid black;
-				width: 840px;
-			}
 
 			.blue,.purple,.gold {
 				display: flex;
@@ -214,6 +248,17 @@ body {
 				align-items: center;
 				width: 100%;
 				min-height: 130px;
+				/*
+				border: 1px solid #05c8f6;
+				border-radius: -10px;
+				*/
+				background:
+                linear-gradient(135deg, transparent 15px, #124058 0) top left,
+                linear-gradient(225deg, transparent 15px, #124058 0) top right,
+                linear-gradient(315deg, transparent 15px, #124058 0) bottom right,
+                linear-gradient(45deg,  transparent 15px, #124058 0) bottom left;
+		        background-size: 50% 50%;
+		        background-repeat: no-repeat;
 			}
 
 				.blue .pic {
@@ -261,7 +306,7 @@ body {
 					}
 
 					.actual_rates_epic .rate,.actual_rates_epic .av_shards{
-						color: purple;
+						color: #a603a6;
 					}
 
 					.actual_rates_legendary .rate,.actual_rates_legendary .av_shards{
@@ -274,7 +319,8 @@ body {
 							display: flex;
 							justify-content: center;
 							align-items: center;
-							outline: 1px solid black;
+							border:1px solid #05c8f6;
+							border-radius: 5px;
 						}
 
 				.counter_block {
@@ -292,7 +338,9 @@ body {
 						justify-content: center;
 						width: 50px;
 						height: 50px;
-						outline: 1px solid black;
+						border:1px solid #05c8f6;
+						border-radius: 5px;
+						color: white;
 					}
 
 					.buttons_counter,.buttons_counter2 {
@@ -310,6 +358,23 @@ body {
 							display: flex;
 							justify-content: center;
 							align-items: center;
+							background-color: transparent;
+							border: 1px solid #05c8f6;
+							border-radius: 4px;
+							color: white;
+							font-size: 12px;
+						}
+
+						button::focus {
+						    appearance: none;
+						}
+
+						.plus,.plus5,.plus10 {
+							color: #37b50d;
+						}
+
+						.minus,.minus10 {
+							color:red;
 						}
 
 				.event {
@@ -331,15 +396,21 @@ body {
 					}
 
 					.event-epic {
-						background-image: url(../img/hero-epic.png);
+						background-image: url(../img/hero_epic.png);
 						background-position: 50% 50%;
+						background-color: transparent;
 						background-repeat: no-repeat;
+						border: 1px solid #05c8f6;
+						border-radius: 5px;
 					}
 
 					.event-legendary {
-						background-image: url(../img/hero-leg.png);
+						background-image: url(../img/hero-legendary2.png);
 						background-position: 50% 50%;
+						background-color: transparent;
 						background-repeat: no-repeat;
+						border: 1px solid #05c8f6;
+						border-radius: 5px;
 					}
 
 				.rates_fact {
@@ -358,14 +429,16 @@ body {
 					.rates_fact-epic,.rates_fact-legendary {
 						width: 60px;
 						height: 40px;
-						outline: 1px solid black;
 						display: flex;
 						justify-content: center;
 						align-items: center;
+						border:1px solid #05c8f6;
+						border-radius: 5px;
+						color: white;
 					}
 
 /* Служебные классы */
 	
 .faded {
-	filter: brightness(90%);
+	filter: brightness(70%);
 }
