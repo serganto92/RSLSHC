@@ -54,12 +54,12 @@ $(function(){
 		if (global_blue_epic == 0.08) {
 			global_blue_epic = global_blue_epic * 2;
 			global_blue_legendary = global_blue_legendary * 2;
-			$('.global_rates_blue .global_rates_img img').toggleClass('faded');
+			$('.global_rates_blue img').toggleClass('faded');
 		}
 		else {
 			global_blue_epic = global_blue_epic / 2;
 			global_blue_legendary = global_blue_legendary / 2;
-			$('.global_rates_blue .global_rates_img img').toggleClass('faded');
+			$('.global_rates_blue img').toggleClass('faded');
 		}
 		$('.global_rates_blue .global_rates_current_epic').html(global_blue_epic * 100 + '%');
 		$('.global_rates_blue .global_rates_current_legendary').html(global_blue_legendary * 100 + '%');
@@ -69,12 +69,12 @@ $(function(){
 		if (global_purple_epic == 0.08) {
 			global_purple_epic = global_purple_epic * 2;
 			global_purple_legendary = global_purple_legendary * 2;
-			$('.global_rates_purple .global_rates_img img').toggleClass('faded');
+			$('.global_rates_purple img').toggleClass('faded');
 		}
 		else {
 			global_purple_epic = global_purple_epic / 2;
 			global_purple_legendary = global_purple_legendary / 2;
-			$('.global_rates_purple .global_rates_img img').toggleClass('faded');
+			$('.global_rates_purple img').toggleClass('faded');
 		}
 		$('.global_rates_purple .global_rates_current_epic').html(global_purple_epic * 100 + '%');
 		$('.global_rates_purple .global_rates_current_legendary').html(global_purple_legendary * 100 + '%');
@@ -83,11 +83,11 @@ $(function(){
 	function SwitchGoldX2 () {
 		if (global_gold_legendary == 0.06) {
 			global_gold_legendary = global_gold_legendary * 2;
-			$('.global_rates_gold .global_rates_img img').toggleClass('faded');
+			$('.global_rates_gold img').toggleClass('faded');
 		}
 		else {
 			global_gold_legendary = global_gold_legendary / 2;
-			$('.global_rates_gold .global_rates_img img').toggleClass('faded');
+			$('.global_rates_gold img').toggleClass('faded');
 		}
 		$('.global_rates_gold .global_rates_current_legendary').html(global_gold_legendary * 100 + '%');
 	};

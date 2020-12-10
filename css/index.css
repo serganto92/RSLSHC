@@ -55,7 +55,7 @@ body {
 		}
 
 		.footer .flex_hidden {
-			min-width: 450px;
+			max-width: 450px;
 		}
 
 		.header_title {
@@ -97,24 +97,21 @@ body {
 		.global_rates_blue .global_rates_img {
 			width: 40px;
 			height: 40px;
-			outline: 1px solid black;
 		}
 
 		.global_rates_purple .global_rates_img {
 			width: 40px;
 			height: 40px;
-			outline: 1px solid black;
 		}
 
 		.global_rates_gold .global_rates_img {
 			width: 40px;
 			height: 40px;
-			outline: 1px solid black;
 		}
 
-			.global_rates_img img {
-				max-width: 40px;
-				max-height: 40px;
+			.global_rates img {
+				max-width: 38px;
+				max-height: 38px;
 				border:1px solid #05c8f6;
 			}
 
@@ -137,7 +134,6 @@ body {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					outline: 1px solid black;
 					font-size: 14px;
 					border:1px solid #05c8f6;
 					border-radius: 5px;
@@ -441,4 +437,82 @@ body {
 	
 .faded {
 	filter: brightness(70%);
+}
+
+@media (max-width: 812px) {
+	header {
+		max-width: 792px;
+	}
+	.header_title {
+		font-size: 15px;
+	}
+	header .flex_hidden {
+		display: none;
+	}
+	.shards,.shards_header,.first_player,.footer {
+		max-width: 792px;
+	}
+}
+
+@media (max-width: 768px) {
+	header {
+		max-width: 748px;
+	}
+	.header_title {
+		font-size: 14px;
+	}
+	.shards,.shards_header,.first_player,.footer {
+		max-width: 748px;
+	}
+}
+
+@media (max-width: 376px) {
+	header {
+		max-width: 365px;
+		max-height: 40px;
+	}
+	.footer .flex_hidden  {
+		max-width: 100px;
+	}
+	.header_title {
+		display: none;
+	}
+	.global_rates {
+		max-width: 355px;
+	}
+		.global_rates_blue,.global_rates_purple {
+			max-width: 120px;
+			max-height: 40px;
+		}
+			.global_rates img {
+				max-width: 27px;
+				max-height: 27px;
+			}
+			.global_rates_blue .global_rates_current,.global_rates_purple .global_rates_current {
+				max-width: 56px;
+				max-height: 25px;
+			}
+				.global_rates_current_epic,.global_rates_current_legendary {
+					max-width: 25px;
+					max-height: 25px;
+					font-size: 9px;
+				}
+			.global_rates_button {
+				max-width: 25px;
+				max-height: 25px;
+			}
+				.global_rates_button button {
+					max-width: 25px;
+					max-height: 25px;
+					font-size: 9px;
+				}
+		.global_rates_gold {
+			max-width: 86px;
+		}
+	.shards,.shards_header,.first_player,.footer {
+		max-width: 365px;
+	}
+	.shards_header {
+		font-size: 10px;
+	}
 }
