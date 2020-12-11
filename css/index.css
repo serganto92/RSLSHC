@@ -469,50 +469,101 @@ body {
 @media (max-width: 376px) {
 	header {
 		max-width: 365px;
-		max-height: 40px;
-	}
-	.footer .flex_hidden  {
-		max-width: 100px;
+		max-height: 50px;
 	}
 	.header_title {
 		display: none;
 	}
 	.global_rates {
 		max-width: 355px;
+		justify-content: space-between;
 	}
-		.global_rates_blue,.global_rates_purple {
-			max-width: 120px;
+		.global_rates_blue,.global_rates_purple,.global_rates_gold {
+			max-width: 90px;
 			max-height: 40px;
 		}
 			.global_rates img {
-				max-width: 27px;
-				max-height: 27px;
+				max-width: 38px;
+				max-height: 38px;
 			}
-			.global_rates_blue .global_rates_current,.global_rates_purple .global_rates_current {
-				max-width: 56px;
-				max-height: 25px;
+			.global_rates_current {
+				display: none;
 			}
-				.global_rates_current_epic,.global_rates_current_legendary {
-					max-width: 25px;
-					max-height: 25px;
-					font-size: 9px;
-				}
 			.global_rates_button {
-				max-width: 25px;
-				max-height: 25px;
+				max-width: 38px;
+				max-height: 38px;
 			}
 				.global_rates_button button {
-					max-width: 25px;
-					max-height: 25px;
-					font-size: 9px;
+					max-width: 38px;
+					max-height: 38px;
+					font-size: 11px;
 				}
-		.global_rates_gold {
-			max-width: 86px;
-		}
+
 	.shards,.shards_header,.first_player,.footer {
 		max-width: 365px;
 	}
-	.shards_header {
-		font-size: 10px;
+	.counter_title {
+		max-width: 130px;
 	}
-}
+	.flex_hidden {
+		display: none;
+	}
+		.type {
+			display: none;
+		}
+	.pic {
+		display: none;
+	}
+	.counter_block {
+		max-width: 130px;
+	}
+	.counter {
+		background-position: 50% 50%;
+		background-size: 100%;
+		max-width: 50px;
+		max-height: 40px;
+		position: absolute;
+		left: 46%;
+		border-color: #05c8f68f;
+	}
+	.blue .counter {
+		background-image: url(../img/blue_shard_faded.png);
+	}
+	.purple .counter {
+		background-image: url(../img/purple_shard_faded.png);
+	}
+	.gold .counter {
+		background-image: url(../img/gold_shard_faded.png);
+	}
+	.actual_rates_epic,.actual_rates_legendary {
+		max-width: 95px;
+		max-height: 40px;
+	}
+		.rate,.av_shards {
+			max-width: 40px;
+			max-height: 40px;
+			font-size: 13px;
+			border-color: #05c8f68f;
+		}
+	.event-epic,.event-legendary {
+		max-width: 33px;
+		max-height: 33px;
+		border-color: #05c8f68f;
+	}
+	.rates_fact-epic,.rates_fact-legendary {
+		max-height: 31px;
+		max-width: 33px;
+		font-size: 11px;
+		border-color: #05c8f68f;
+	}
+	.shards_header span {
+		font-size: 12px;
+	}
+	.footer {
+		justify-content: space-evenly;
+	}
+	.footer .flex_hidden {
+		display: block;
+		max-width: 130px;
+	}
+}	
