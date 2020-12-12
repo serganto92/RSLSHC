@@ -48,6 +48,12 @@ $(function(){
 		purple_legendary_info_rate = 0
 		gold_legendary_info_rate = 0;
 
+	/* Запрет двойного клика */
+
+	$('div').dblclick(function (){
+		false;
+	});
+
 	/* Включение x2 rates */
 
 	function SwitchBlueX2 () {
