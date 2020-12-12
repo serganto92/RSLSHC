@@ -433,6 +433,13 @@ body {
 						color: white;
 					}
 
+	.help {
+		border: none;
+		background-color: transparent;
+		color: #ba8c32;
+		font-size: 14px;
+	}
+
 /* Служебные классы */
 	
 .faded {
