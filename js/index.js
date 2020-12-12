@@ -39,7 +39,7 @@ $(function(){
 		gold_legendary_info_count = 0;
 
 	let blue_info_counter = 0,
-		purple_info_counter = 0
+		purple_info_counter = 0,
 		gold_info_counter = 0;
 
 	let blue_epic_info_rate = 0,
