@@ -700,5 +700,8 @@ $(function(){
 	$(document).ready(LoadVariablesBC());
 	$(document).ready(LoadVariablesPC());
 	$(document).ready(LoadVariablesGC());
+	$(window).ready(function(){
+		alert('Калькулятор шардов RSL \n Actual Rates - текущие шансы на Эпика/Легу \n в заивисимости от кол-ва открытых осколков \n Counter - счётчик открытых осколков \n Event - нажимайте, когда вам выпадет Эпик/Лега \n R.Fact - реальные шансы на Эпика/Легу');
+	});
 
 });
