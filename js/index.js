@@ -33,9 +33,9 @@ $(function(){
 	/* Контейнеры статистики */
 
 	let blue_epic_info_count = 0,
-		blue_legendary_info_count = 0
-		purple_epic_info_count = 0
-		purple_legendary_info_count = 0
+		blue_legendary_info_count = 0,
+		purple_epic_info_count = 0,
+		purple_legendary_info_count = 0,
 		gold_legendary_info_count = 0;
 
 	let blue_info_counter = 0,
@@ -43,9 +43,9 @@ $(function(){
 		gold_info_counter = 0;
 
 	let blue_epic_info_rate = 0,
-		blue_legendary_info_rate = 0
-		purple_epic_info_rate = 0
-		purple_legendary_info_rate = 0
+		blue_legendary_info_rate = 0,
+		purple_epic_info_rate = 0,
+		purple_legendary_info_rate = 0,
 		gold_legendary_info_rate = 0;
 
 	/* Запрет двойного клика */
